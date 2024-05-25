@@ -1,0 +1,78 @@
+{
+  "wifi": {
+    "AP": [
+      {
+        "ssid": "OnePlus 12",
+        "password": "lolxd123"
+      }
+    ],
+    "autoAP": {
+      "password": "lolxd123",
+      "powerOff": 10
+    }
+  },
+  "callsign": "Ti0TEC24",
+  "other": {
+    "rememberStationTime": 30,
+    "sendBatteryVoltage": false,
+    "externalVoltageMeasurement": false,
+    "externalVoltagePin": 34,
+    "lowPowerMode": false,
+    "lowVoltageCutOff": 0
+  },
+  
+  "aprs_is": {
+    "active": true,
+    "passcode": "24712",
+    "server": "rotate.aprs2.net",
+    "port": 14580,
+    "filter": "m/10",
+    "toRF": false
+  },
+  "beacon": {
+    "comment": "LoRa APRS iGate ",
+    "latitude": 9.857679940747179,
+    "longitude": -83.9190656103696,
+    "interval": 15,
+    "overlay": "L",
+    "symbol": "#",
+    "sendViaAPRSIS": true,
+    "sendViaRF": false,
+    "path": "WIDE1-1"
+  },
+  "lora": {
+    "rxFreq": 433775000,
+    "txFreq": 433775000,
+    "spreadingFactor": 12,
+    "signalBandwidth": 125000,
+    "codingRate4": 5,
+    "power": 20,
+    "txActive": false,
+    "rxActive": true
+  },
+  "display": {
+    "alwaysOn": true,
+    "timeout": 4,
+    "turn180": false
+  },
+  "syslog": {
+    "active": false,
+    "server": "192.168.0.100",
+    "port": 514
+  },
+  "digi": {
+    "mode": 0
+  },
+  "tnc": {
+    "enableServer": false,
+    "enableSerial": false,
+    "acceptOwn": false
+  },
+  "bme": {
+    "active": false
+  },
+  "ota": {
+    "username": "",
+    "password": ""
+  }
+}
