@@ -11,7 +11,7 @@
       "powerOff": 10
     }
   },
-  "callsign": "Ti0TEC24",
+  "callsign": "TiTEC4",
   "other": {
     "rememberStationTime": 30,
     "sendBatteryVoltage": false,
@@ -23,14 +23,14 @@
   
   "aprs_is": {
     "active": true,
-    "passcode": "24712",
+    "passcode": "12506",
     "server": "rotate.aprs2.net",
     "port": 14580,
     "filter": "m/10",
     "toRF": false
   },
   "beacon": {
-    "comment": "LoRa APRS iGate ",
+    "comment": "LoRa APRS iGate Repo: https://github.com/JesusRV001/Repositorio_Taller_Integrador.git",
     "latitude": 9.857679940747179,
     "longitude": -83.9190656103696,
     "interval": 15,

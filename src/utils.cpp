@@ -47,14 +47,14 @@ namespace Utils {
         
         if (WiFi.status() == WL_CONNECTED && Config.aprs_is.active && Config.beacon.sendViaAPRSIS) {
             delay(1000);
-            status += ",qAC:>https://github.com/richonguzman/LoRa_APRS_iGate " + versionDate;
+            status += ",qAC:>https://github.com/JesusRV001/Repositorio_Taller_Integrador.git " + versionDate;
             APRS_IS_Utils::upload(status);
             SYSLOG_Utils::log(2, status,0,0,0);   // APRSIS TX
             statusAfterBoot = false;
         }
         if (statusAfterBoot && !Config.beacon.sendViaAPRSIS && Config.beacon.sendViaRF) {
             delay(2000);
-            status += ":>https://github.com/richonguzman/LoRa_APRS_iGate " + versionDate;
+            status += ":>https://github.com/JesusRV001/Repositorio_Taller_Integrador.git " + versionDate;
             STATION_Utils::addToOutputPacketBuffer(status);
             statusAfterBoot = false;
         }
@@ -76,7 +76,7 @@ namespace Utils {
             digitalWrite(INTERNAL_LED_PIN,HIGH);
         #endif
         Serial.println("\nStarting Station: " + Config.callsign + "   Version: " + versionDate);
-        show_display(" LoRa APRS", "", "   ( iGATE & DIGI )", "", "", "Richonguzman / CA2RXU", "      " + versionDate, 4000);
+        show_display(" LoRa APRS", "", "   ( iGATE & DIGI )", "", "", "Grupo4 / CA2RXU", "      " + versionDate, 4000);
         #ifdef INTERNAL_LED_PIN
             digitalWrite(INTERNAL_LED_PIN,LOW);
         #endif
@@ -122,7 +122,7 @@ namespace Utils {
             beaconPacket += Config.beacon.comment;
             secondaryBeaconPacket += Config.beacon.comment;
 
-            #ifdef BATTERY_PIN
+            #if defined(BATTERY_PIN) || defined(HAS_AXP192) || defined(HAS_AXP2101)
                 if (Config.battery.sendInternalVoltage || Config.battery.monitorInternalVoltage) {
                     float internalVoltage       = BATTERY_Utils::checkInternalVoltage();
                     String internalVoltageInfo  = String(internalVoltage,2) + "V";
