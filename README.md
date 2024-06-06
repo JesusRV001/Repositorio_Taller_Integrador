@@ -1,8 +1,35 @@
 # Repositorio_Taller_Integrador
 Repositorio para el control de versiones para los trabajos del curso de Taller integrador
+ 
+# Descripción
+En este repositorio se encuentra el código utilizado para la implementación de dispositivos relacionados con la red LoRa, específicamente del Igate. En el directorio principal del repositorio se hallan tanto los archivos necesarios para la programación del dispositivo como la documentación del proyecto. Además, el informe final incluye la investigación previa a la conexión del sistema embebido a la red, evidencia de la activación del dispositivo y cómo localizarlo en los servidores de la red LoRa.
 
-En este repositorio se encuentra el codigo utilizado para la implementacion de dispostivos relacionados con la red LoRa y que en este caso son del Igate. 
+## Tabla de Contenidos
 
-Como se muestra en el main del repositorio se hayan tanto los archivos para la porgramación del dispositivo y la documentacion del proyecto. 
+1. [Instalación](#instalación)
+2. [Uso](#uso)
+3. [Contacto](#contacto)
 
-En el informe final se encuentra la investigacion previa que se realizo antes de conectar el sistema embebido a la read, tambien muestra evidencia de la activasion del dispositivos y cmo hayarlo dentro de los servidores de la red LoRa. 
+## Instalación
+
+### Requisitos Previos
+
+- Instalar Visual studio code 
+- Tener permiso de instalacion de extenciones
+
+### Instrucciones
+
+1. Clonar la carpeta: `LoRa_iGate`
+2. Instalar la extension en Visual studio code: `PlatformIO IDE`
+3. mediante la extension abrir la carpeta clonada.
+4. seleccionar el tipo de placa que se va a utilizar el proyecto.
+5. configurar el codigo como se muestra en el informe del proyecto.
+6. compilar y clonar una imagen en el dispositivo. 
+
+## Uso
+un iGate (Internet Gateway) se utiliza principalmente para actuar como un puente entre dispositivos LoRa y una red más amplia, como Internet.
+
+##Contacto
+-dylan4rod4@estudiantec.cr
+-jesusrv@estudiantec.cr
+-pedro.medinila@estudiantec.cr
