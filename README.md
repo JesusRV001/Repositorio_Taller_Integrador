@@ -29,7 +29,7 @@ En este repositorio se encuentra el código utilizado para la implementación de
 ## Uso
 un iGate (Internet Gateway) se utiliza principalmente para actuar como un puente entre dispositivos LoRa y una red más amplia, como Internet.
 
-##Contacto
+## Contacto
 -dylan4rod4@estudiantec.cr
 -jesusrv@estudiantec.cr
 -pedro.medinila@estudiantec.cr
